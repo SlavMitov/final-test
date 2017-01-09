@@ -39,3 +39,56 @@ ul > li img {
 }
 
 /* Вашият CSS от тук надолу */
+/*1.a*/
+@media screen and (max-width: 1000px) {
+    ul > li {
+        height: auto;
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul > li {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul > li {
+        width: calc(100%/1);
+    }
+}
+
+/*1.b*/
+#subtask2
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
+/*1.c*/
+#subtask3
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
+}
+#subtask3
+img:hover {
+    background-color: lightblue;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+#subtask3
+li:hover {
+    background-color: lightblue;
+}
+
+/*1.d*/
+#subtask4
+li::after { 
+    content: ""; 
+    position: absolute;
+    
+}
+
+/*1.e*/
